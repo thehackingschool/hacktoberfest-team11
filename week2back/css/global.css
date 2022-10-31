@@ -1,0 +1,22 @@
+:root{
+    --color-primary:#fdab95;
+    --color-primary-dark:#e2d1b5;
+    --color-primary-light:#f0e0c6;
+    --color-text-primary: #b55650;
+    --color-text-secondary:#683838b4;
+    --color-overlay-primary:rgb(223, 160, 160);
+    --color-dark: #000000;
+}
+*,
+*::after,
+*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+}
+h1, h2{
+    font-weight: 700;
+}

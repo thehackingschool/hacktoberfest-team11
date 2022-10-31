@@ -1,0 +1,91 @@
+h1#urgent__title
+{
+    color:#b55650;
+    font-size:8rem;
+    text-align: center;
+    font-family:"poppins",sans-serif;
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+    animation: animateHeader 7s ease-in-out infinite;
+    width:100%;
+}
+body
+{
+    width: 100%;
+    height: 100vh;
+    font-family: 'poppins', sans-serif;
+    background: radial-gradient(circle at center, var(--color-primary-light) 0, var(--color-primary-light) 0, var(--color-primary-dark));
+    display: flex;
+    flex-direction: column;
+    color: var(--color-text-secondary);
+    position: relative; 
+}
+main{
+    height:100vh;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  background-color: #f0e0c6;
+  color: #f0e0c6;
+}
+h1 {
+  text-align: center;
+  margin: 2rem 0;
+  font-size: 2.5rem;
+}
+
+.accordion {
+  width: 100%;
+  height:100%;
+  max-width: 1000px;
+  margin: 2rem auto;
+}
+.accordion-item {
+  background-color: #b55650;
+  color: #ffff;
+  margin: 1rem 0;
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 5px 0 rgba(0,0,0,0.25);
+}
+.accordion-item-header {
+  padding: 0.5rem 3rem 0.5rem 1rem;
+  min-height: 3.5rem;
+  line-height: 1.25rem;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  position: relative;
+  cursor: pointer;
+}
+.accordion-item-header::after {
+  content: "\002B";
+  font-size: 2rem;
+  position: absolute;
+  right: 1rem;
+}
+.accordion-item-header.active::after {
+  content: "\2212";
+}
+.accordion-item-body {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  width: 70%;
+}
+.accordion-item-body-content {
+  padding: 1rem;
+  line-height: 1.5rem;
+  border-top: 1px solid;
+  border-image: linear-gradient(to right, transparent, #ffff, transparent) 1;
+}
+
+@media(max-width:767px) {
+  html {
+    font-size: 10px;
+  }
+} 
